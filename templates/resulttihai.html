@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Output</title>
+        <style>
+                body{
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    font-size: 25px;
+                    letter-spacing: 3px;
+                    font-family: sans-serif;
+                }
+        </style>
+    </head>
+    <body>
+        {% for i in range(x) %}
+            <br>
+            <br>
+            {{ res[i] }}
+            <br>
+            <br>
+            <hr>
+        {% endfor %}
+    </body>
+</html>

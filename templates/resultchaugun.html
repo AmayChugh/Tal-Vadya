@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Output</title>
+        <style>
+                body{
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    font-size: 25px;
+                    letter-spacing: 3px;
+                    font-family: sans-serif;
+                }
+                </style>
+    </head>
+    <body>
+                {% for i in range(16) %}
+                    {% if (i+1)%4==0 %}
+                        {{ res[i] }}
+                        <p></p>
+                    {% else %}
+                        {{ res[i] }}
+                    {% endif %}
+                {% endfor %}
+            
+    </body>
+</html>

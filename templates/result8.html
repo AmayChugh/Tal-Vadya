@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Output</title>
+        <style>
+                body{
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    font-size: 25px;
+                    letter-spacing: 3px;
+                    font-family: sans-serif;
+                }
+                </style>
+    </head>
+    <body>
+           {% for song in res %}
+                {% for i in range(8) %}
+                    {% if (i+1)%4==0 %}
+                        {{ song[i] }}
+                        <p></p>
+                    {% else %}
+                        {{ song[i] }}
+                    {% endif %}
+                {% endfor %}
+
+                <hr>
+            {% endfor %} 
+            
+    </body>
+</html>

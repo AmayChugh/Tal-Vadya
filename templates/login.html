@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function myfunction()
+    {
+      var message = '{{ msg }}';
+      if (message != "")
+      {
+        alert (message);
+      }
+      
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Domine|Josefin+Sans|Pacifico&display=swap" rel="stylesheet">
+    <style>
+        #form1{
+            display: inline-block;
+            width: 60%
+        }
+        body{
+            background-image: url('/static/back.jpg');
+            background-size: cover;
+        }
+        #title1{
+            margin-top: 10%;
+            margin-left:40%;
+        }
+        #login1{
+            float: left;
+        }
+        #register1{
+            margin-left: 20%;
+        }
+        h2{
+            font-family: 'Domine', serif;
+        }
+    </style>
+    <div class="container" id='title1'>
+  <title>Login Page</title>
+  </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container" id='form1'>
+    <h2 class="text-center">LOGIN</h2>
+    <form action="http://localhost:5000/login" method = "POST">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email"name="emailid" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" name="password" class="form-control" id="pwd">
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+        <div class="container">
+        <button type="submit" class="btn btn-info" id='login1' onclick="myfunction()">LOGIN</button>
+        <a href="file:///C:/Users/Test/env/Scripts/register.html"><button type="button" class="btn btn-info " id='register1'>REGISTER</button></a>
+        </div>
+  
+        </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          body{
+              color:white;
+              background-color:black;
+              background-image: url('/static/tihai.jpg');
+              background-size: cover
+          }
+          h2{
+              
+              font-family: 'Pacifico', cursive;
+              text-align: center;
+          }
+          h6{
+              font-family: 'Pacifico', cursive;
+              text-align: center;
+              padding-top: 10px;
+
+          }
+          input[type="text"]
+          {
+              font-family: 'Pacifico', cursive;
+              font-size: 40px;
+              letter-spacing: 4px;
+              text-align: center
+              color:white;
+          }
+          input, select, textarea{
+              color:white;
+              text-align: center
+              }
+          #div{
+              padding: 30px;
+          }
+          #main{
+              margin-top: 10%
+          }
+      </style>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Mukta|Pacifico&display=swap" rel="stylesheet">
+  <title>16 beats</title>
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+  <link rel = "stylesheet"
+     href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel = "stylesheet"
+     href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <script type = "text/javascript"
+     src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+  </script> 
+  
+  <script>
+     $(document).ready(function() {
+        $('select').material_select();
+     });
+  </script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+      <div>
+            <a href="http://localhost:5000/home" style="position: absolute;left:5%;"class="btn-floating btn-large waves-effect waves-light teal lighten-3"><i class="material-icons">arrow_back</i></a>
+         </div>
+      <div>
+            <a href="http://localhost:5000/home" style="position: absolute;right:5%;"class="btn-floating btn-large waves-effect waves-light teal lighten-3"><i class="material-icons">home</i></a>
+         </div>
+      <h2>TIHAI</h2>
+      <h6>SELECT BOL</h6>
+          <div class="row">
+                  <form class="col s12" action="http://localhost:5000/tihai/resulttihai" method="POST">
+                    <div class="row">
+                            <div class="input-field col s3">
+                                    <select name="beat1">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                            <div class="input-field col s3">
+                                    <select name="beat2">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                            <div class="input-field col s3">
+                                    <select name="beat3">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                            <div class="input-field col s3">
+                                    <select name="beat4">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="input-field col s3">
+                                    <select name="beat5">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                            <div class="input-field col s3">
+                                    <select name="beat6">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                            <div class="input-field col s3">
+                                    <select name="beat7">
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                            <div class="input-field col s3">
+                                    <select name="beat8"> 
+                                       <option value = "" disabled selected>SELECT BEATS</option>
+                                       <option value = "1">Dhaa</option>
+                                       <option value = "2">Dhin</option>
+                                       <option value = "3">Ga</option>
+                                       <option value = "4">Ka</option>
+                                       <option value = "5">Kat</option>
+                                       <option value = "6">Naa</option>
+                                       <option value = "7">Na</option>
+                                       <option value = "8">Taa</option>
+                                       <option value = "9">Tak</option>
+                                       <option value = "10">Tee</option>
+                                       <option value = "11">TiraKita</option>
+                                       <option value = "12">Tita</option>
+                                       <option value = "13">Tin</option>
+                                       <option value = "14">Too</option>
+                                     
+                                    </select>               
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                                <div class="input-field col s3">
+                                        <select name="beat9">
+                                           <option value = "" disabled selected>SELECT BEATS</option>
+                                           <option value = "1">Dhaa</option>
+                                           <option value = "2">Dhin</option>
+                                           <option value = "3">Ga</option>
+                                           <option value = "4">Ka</option>
+                                           <option value = "5">Kat</option>
+                                           <option value = "6">Naa</option>
+                                           <option value = "7">Na</option>
+                                           <option value = "8">Taa</option>
+                                           <option value = "9">Tak</option>
+                                           <option value = "10">Tee</option>
+                                           <option value = "11">TiraKita</option>
+                                           <option value = "12">Tita</option>
+                                           <option value = "13">Tin</option>
+                                           <option value = "14">Too</option>
+                                         
+                                        </select>               
+                                </div>
+                                <div class="input-field col s3">
+                                        <select name="beat10">
+                                           <option value = "" disabled selected>SELECT BEATS</option>
+                                           <option value = "1">Dhaa</option>
+                                           <option value = "2">Dhin</option>
+                                           <option value = "3">Ga</option>
+                                           <option value = "4">Ka</option>
+                                           <option value = "5">Kat</option>
+                                           <option value = "6">Naa</option>
+                                           <option value = "7">Na</option>
+                                           <option value = "8">Taa</option>
+                                           <option value = "9">Tak</option>
+                                           <option value = "10">Tee</option>
+                                           <option value = "11">TiraKita</option>
+                                           <option value = "12">Tita</option>
+                                           <option value = "13">Tin</option>
+                                           <option value = "14">Too</option>
+                                         
+                                        </select>               
+                                </div>
+                                <div class="input-field col s3">
+                                        <select name="beat11">
+                                           <option value = "" disabled selected>SELECT BEATS</option>
+                                           <option value = "1">Dhaa</option>
+                                           <option value = "2">Dhin</option>
+                                           <option value = "3">Ga</option>
+                                           <option value = "4">Ka</option>
+                                           <option value = "5">Kat</option>
+                                           <option value = "6">Naa</option>
+                                           <option value = "7">Na</option>
+                                           <option value = "8">Taa</option>
+                                           <option value = "9">Tak</option>
+                                           <option value = "10">Tee</option>
+                                           <option value = "11">TiraKita</option>
+                                           <option value = "12">Tita</option>
+                                           <option value = "13">Tin</option>
+                                           <option value = "14">Too</option>
+                                         
+                                        </select>               
+                                </div>
+                                <div class="input-field col s3">
+                                        <select name="beat12">
+                                           <option value = "" disabled selected>SELECT BEATS</option>
+                                           <option value = "1">Dhaa</option>
+                                           <option value = "2">Dhin</option>
+                                           <option value = "3">Ga</option>
+                                           <option value = "4">Ka</option>
+                                           <option value = "5">Kat</option>
+                                           <option value = "6">Naa</option>
+                                           <option value = "7">Na</option>
+                                           <option value = "8">Taa</option>
+                                           <option value = "9">Tak</option>
+                                           <option value = "10">Tee</option>
+                                           <option value = "11">TiraKita</option>
+                                           <option value = "12">Tita</option>
+                                           <option value = "13">Tin</option>
+                                           <option value = "14">Too</option>
+                                         
+                                        </select>               
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                    <div class="input-field col s3">
+                                            <select name="beat13">
+                                               <option value = "" disabled selected>SELECT BEATS</option>
+                                               <option value = "1">Dhaa</option>
+                                               <option value = "2">Dhin</option>
+                                               <option value = "3">Ga</option>
+                                               <option value = "4">Ka</option>
+                                               <option value = "5">Kat</option>
+                                               <option value = "6">Naa</option>
+                                               <option value = "7">Na</option>
+                                               <option value = "8">Taa</option>
+                                               <option value = "9">Tak</option>
+                                               <option value = "10">Tee</option>
+                                               <option value = "11">TiraKita</option>
+                                               <option value = "12">Tita</option>
+                                               <option value = "13">Tin</option>
+                                               <option value = "14">Too</option>
+                                             
+                                            </select>               
+                                    </div>
+                                    <div class="input-field col s3">
+                                            <select name="beat14">
+                                               <option value = "" disabled selected>SELECT BEATS</option>
+                                               <option value = "1">Dhaa</option>
+                                               <option value = "2">Dhin</option>
+                                               <option value = "3">Ga</option>
+                                               <option value = "4">Ka</option>
+                                               <option value = "5">Kat</option>
+                                               <option value = "6">Naa</option>
+                                               <option value = "7">Na</option>
+                                               <option value = "8">Taa</option>
+                                               <option value = "9">Tak</option>
+                                               <option value = "10">Tee</option>
+                                               <option value = "11">TiraKita</option>
+                                               <option value = "12">Tita</option>
+                                               <option value = "13">Tin</option>
+                                               <option value = "14">Too</option>
+                                             
+                                            </select>               
+                                    </div>
+                                    <div class="input-field col s3">
+                                            <select name="beat15">
+                                               <option value = "" disabled selected>SELECT BEATS</option>
+                                               <option value = "1">Dhaa</option>
+                                               <option value = "2">Dhin</option>
+                                               <option value = "3">Ga</option>
+                                               <option value = "4">Ka</option>
+                                               <option value = "5">Kat</option>
+                                               <option value = "6">Naa</option>
+                                               <option value = "7">Na</option>
+                                               <option value = "8">Taa</option>
+                                               <option value = "9">Tak</option>
+                                               <option value = "10">Tee</option>
+                                               <option value = "11">TiraKita</option>
+                                               <option value = "12">Tita</option>
+                                               <option value = "13">Tin</option>
+                                               <option value = "14">Too</option>
+                                             
+                                            </select>               
+                                    </div>
+                                    <div class="input-field col s3">
+                                            <select name="beat16">
+                                               <option value = "" disabled selected>SELECT BEATS</option>
+                                               <option value = "1">Dhaa</option>
+                                               <option value = "2">Dhin</option>
+                                               <option value = "3">Ga</option>
+                                               <option value = "4">Ka</option>
+                                               <option value = "5">Kat</option>
+                                               <option value = "6">Naa</option>
+                                               <option value = "7">Na</option>
+                                               <option value = "8">Taa</option>
+                                               <option value = "9">Tak</option>
+                                               <option value = "10">Tee</option>
+                                               <option value = "11">TiraKita</option>
+                                               <option value = "12">Tita</option>
+                                               <option value = "13">Tin</option>
+                                               <option value = "14">Too</option>
+                                             
+                                            </select>               
+                                    </div>
+                                </div>
+                              <div class="center-align">
+                                <button class="btn waves-effect waves-light white black-text" type="submit" name="action">Submit
+                                      <i class="material-icons right">send</i>
+                                    </button>
+                              </div>
+
+                   </form>
+              </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

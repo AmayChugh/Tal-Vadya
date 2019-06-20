@@ -1,0 +1,55 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <style>
+            #div{
+                padding: 10px;
+            }
+            body{
+                background-image: url('/static/page3.jpeg');
+                background-size:cover;
+            }
+        </style>
+            <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div>
+            <a href="http://localhost:5000/home" style="position: absolute;left:5%;"class="btn-floating btn-large waves-effect waves-light teal lighten-3"><i class="material-icons">arrow_back</i></a>
+         </div>
+        <div>
+            <a href="http://localhost:5000/home" style="position: absolute;right:5%;"class="btn-floating btn-large waves-effect waves-light teal lighten-3"><i class="material-icons">home</i></a>
+         </div>
+            <div id='main'>
+            <h1 class="center-align  teal-text text-lighten-5">SELECT BEATS</h1>
+            <div id="div" class="row center">
+            <a href="http://localhost:5000/types/6beats"class="waves-effect waves-light btn-large center-align"><i class="material-icons right ">filter_6</i>6 BEATS</a>
+            </div>
+            <div id="div" class="row center">
+                    <a href="http://localhost:5000/types/8beats" class="waves-effect waves-light btn-large center-align"><i class="material-icons right">filter_8</i>8 BEATS</a>
+                    </div> 
+            <div id="div" class="row center">
+            <a href="http://localhost:5000/types/10beats" class="waves-effect waves-light btn-large center-align"><i class="material-icons right">filter_9_plus</i>10 BEATS</a>
+            </div>
+            <div id="div" class="row center">
+            <a href="http://localhost:5000/types/12beats" class="waves-effect waves-light btn-large center-align"><i class="material-icons right">filter_2</i><i class="material-icons right">filter_1</i>12 BEATS</a>
+            </div>
+            <div id="div" class="row center">
+             <a href="http://localhost:5000/types/16beats" class="waves-effect waves-light btn-large center-align"><i class="material-icons right">filter_6</i><i class="material-icons right">filter_1</i>16 BEATS</a>
+             </div>          
+            </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
